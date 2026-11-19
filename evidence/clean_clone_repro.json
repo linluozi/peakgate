@@ -1,0 +1,22 @@
+{
+  "clean_clone_run": {
+    "aa_peak_false_positives": 0,
+    "aa_time_false_positives": 13,
+    "aa_trials": 30,
+    "real_peak_ratio": 0.00047311551341311137,
+    "real_time_ratio": 0.985485848517499
+  },
+  "clone_dir": "/tmp/pg-smoke",
+  "command": ".venv/bin/python evidence/run_evidence.py",
+  "committed_run": {
+    "aa_peak_false_positives": 0,
+    "aa_time_false_positives": 24,
+    "aa_trials": 30,
+    "real_peak_ratio": 0.00047311551341311137,
+    "real_time_ratio": 1.0151966843858438
+  },
+  "elapsed_seconds_clean_clone": 13.3,
+  "note": "Independent re-run from a fresh clone of the published repo (same machine, same interpreter).",
+  "peak_ratio_identical": true,
+  "time_ratio_sign_flipped": true
+}
