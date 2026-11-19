@@ -1,4 +1,9 @@
 {
+  "aa_time_false_positives_range": [
+    13,
+    18,
+    24
+  ],
   "clean_clone_run": {
     "aa_peak_false_positives": 0,
     "aa_time_false_positives": 13,
@@ -18,5 +23,16 @@
   "elapsed_seconds_clean_clone": 13.3,
   "note": "Independent re-run from a fresh clone of the published repo (same machine, same interpreter).",
   "peak_ratio_identical": true,
+  "peak_ratio_identical_across_three_runs": true,
+  "third_run": {
+    "aa_peak_false_positives": 0,
+    "aa_time_false_positives": 18,
+    "aa_trials": 30,
+    "clone_dir": "/tmp/pg-final",
+    "commit": "4db92f2",
+    "evidence_exit": 0,
+    "pytest": "11 passed",
+    "real_peak_ratio": 0.00047311551341311137
+  },
   "time_ratio_sign_flipped": true
 }
