@@ -1,0 +1,79 @@
+{
+  "aa": {
+    "peak_budget": 0.01,
+    "peak_false_positives": 0,
+    "peak_ratio_max": 1.0,
+    "peak_ratio_min": 1.0,
+    "reps_per_arm": 3,
+    "time_budget": 0.01,
+    "time_false_positives": 24,
+    "time_ratio_max": 1.4240208877284595,
+    "time_ratio_min": 0.95,
+    "trials": 30
+  },
+  "corpus": {
+    "chars": 1000000,
+    "files": 32,
+    "first_files": [
+      "__future__.py",
+      "__hello__.py",
+      "_aix_support.py",
+      "_collections_abc.py",
+      "_compat_pickle.py"
+    ],
+    "sha256": "7f1b5ddad734b8977eb60a43e3c412ccaa7de36c84f697c694f62ccb26398851",
+    "stdlib": "/usr/lib/python3.12"
+  },
+  "cpu": "AMD EPYC 7K62 48-Core Processor",
+  "determinism": {
+    "findall": {
+      "peak_distinct_in_40": 2,
+      "peak_median": 4711323.0,
+      "peak_rel_sd": 1.811784375442714e-06,
+      "peak_spread_bytes": 32.0,
+      "required_reps_1pct": 34,
+      "time_ms_median": 84.09230969846249,
+      "time_rel_sd": 0.020733401479557562
+    },
+    "finditer": {
+      "peak_distinct_in_40": 2,
+      "peak_median": 2229.0,
+      "peak_rel_sd": 0.0022707316471902916,
+      "peak_spread_bytes": 32.0,
+      "required_reps_1pct": 78,
+      "time_ms_median": 86.65653644129634,
+      "time_rel_sd": 0.03180453500604073
+    },
+    "json_dumps": {
+      "peak_distinct_in_40": 2,
+      "peak_median": 181961.0,
+      "peak_rel_sd": 4.691120425625055e-05,
+      "peak_spread_bytes": 32.0,
+      "required_reps_1pct": 15,
+      "time_ms_median": 27.12353877723217,
+      "time_rel_sd": 0.013508912717515188
+    }
+  },
+  "finished": "2026-11-19T06:12:54Z",
+  "mem_total_kb": 3812564,
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "real_case": {
+    "case": "re.findall vs re.finditer over 1 MB of real stdlib source",
+    "matches": 84325,
+    "peak_baseline_bytes": 4711323.0,
+    "peak_candidate_bytes": 2229.0,
+    "peak_ratio": 0.00047311551341311137,
+    "time_ratio": 1.0151966843858438
+  },
+  "sensitivity": {
+    "case": "identical loops allocating 1,000,000 vs 1,020,000 ints (2%)",
+    "measured_peak_ratio": 1.0199993800192193,
+    "peak_regression_detected_at_5_reps": true,
+    "reps_time_needs_for_2pct": 114,
+    "time_ratio": 0.9713252799258938,
+    "time_regression_at_5_reps": false,
+    "time_rel_sd_for_2pct": 0.0768017577184738
+  },
+  "started": "2026-11-19T06:12:41Z"
+}

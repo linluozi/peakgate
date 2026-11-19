@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peakgate"
+version = "0.1.0"
+description = "Per-call peak allocation measurement with a near-deterministic A/B gate"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "linluozi" }]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+peakgate = "peakgate.cli:main"
+
+[tool.setuptools]
+packages = ["peakgate"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
