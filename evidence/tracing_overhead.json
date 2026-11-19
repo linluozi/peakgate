@@ -1,0 +1,8 @@
+{
+  "case": "re.findall over 1,000,000-char stdlib corpus",
+  "ratio": 3.25,
+  "reps": 20,
+  "traced_median_ms": 89.87,
+  "untraced_median_ms": 27.68,
+  "warmup": 5
+}
